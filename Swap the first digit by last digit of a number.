@@ -1,0 +1,17 @@
+import math
+num=int(input("enter the number:"))
+dig=int(math.log10(num)+1)
+temp=num
+rev=0
+last_dig=num%10
+while(num>0):
+    rem=num%10
+    rev=rev*10+rem
+    num=num//10
+first_dig=rev%10
+temp=temp//10
+temp=(10*temp)+first_dig
+temp=temp%(first_dig*(10**(dig-1)))
+last_dig=last_dig*(10**(dig-1))
+temp=temp+last_dig
+print(temp)
