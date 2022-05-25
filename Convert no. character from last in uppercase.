@@ -1,0 +1,5 @@
+str=input("enter the string: ")
+n=int(input("enter the last no. of character which are in upper case: "))
+l=len(str)
+s=str[0:l-n]+str[l-n:].upper()
+print(s)
