@@ -1,0 +1,12 @@
+dict={}
+n=int(input("enter the no. of items in dictionary1: "))
+for i in range(n):
+    k=int(input("Enter the key: "))
+    v=int(input("Enter the value: "))
+    dict.update({k:v})
+dict2={}
+for i in dict.keys():
+    if dict[i] not in dict2.values():
+        dict2.update({i:dict[i]})
+print(dict2)
+
