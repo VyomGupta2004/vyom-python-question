@@ -1,0 +1,10 @@
+f=open('avin.txt','r')
+f.seek(0,0)
+sum=0
+str=f.read()
+a=str.split()
+print(a,type(a))
+for i in a:
+    sum+=1
+print(sum)
+f.close()
