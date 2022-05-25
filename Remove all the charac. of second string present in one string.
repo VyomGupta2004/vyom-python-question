@@ -1,0 +1,12 @@
+str1=input("enter first string: ")
+str2=input("enter second string: ")
+str3=''
+for i in str2:
+    c=0
+    for j in str1:
+       if i==j:
+           c+=1
+    if(c==0):
+        str3=str3+i
+print(str3)
+    
